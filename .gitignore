@@ -1,0 +1,6 @@
+custom/
+logs/
+.vscode/
+**/__pycache__/
+emsdk/
+risk-game-engine/
