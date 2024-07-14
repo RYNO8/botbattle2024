@@ -96,5 +96,8 @@ def challengePathRand(A_, Bs):
 # print((y - x) / 10000)
 # print(__file__)
 
-for i, x in enumerate(challenge(300, 100)):
-    print((i, x))
+# for i, x in enumerate(challenge(14, 9)):
+#     print((i, x))
+for b in range(200):
+    E = sum(i * x for i, x in enumerate(challenge(200, b)))
+    print((b, E))
