@@ -1,9 +1,44 @@
 # SPREE_THRESH, LEAVE_T, SCORE_D, SCORE_C = 6, 2, 1, 0
-SPREE_THRESH, LEAVE_T, SCORE_D, SCORE_C, CARD_THRESH = 6, 3, 1, 0, 9
+SPREE_THRESH, LEAVE_T, SCORE_D, SCORE_C, CARD_THRESH = 6, 3, 1, 0, 7
 # SPREE_THRESH, LEAVE_T, SCORE_D, SCORE_C = map(int, __file__.split("_")[-5:-1])
 UNCLAIMED_PRIORITY = [39]
 
 # for filename in w_{5,6,7,8}_{2,3,4}_{0,1}_{0,1}_.py; do cp w.py "${filename}"; done
+
+# 75  IELTS5.5                  53.8%_13 [7, 0, 1, 4, 1]
+# 80  ryno                      53.2%_154 [82, 27, 22, 16, 7]
+# 76  Gacha Funds               50.0%_18 [9, 4, 1, 4, 0]
+# 90  しかのこのこのここしたんたん            50.0%_22 [11, 7, 2, 2, 0]
+# 66  Team Name                 42.1%_19 [8, 6, 3, 1, 1]
+# 89  Banana                    35.7%_14 [5, 2, 2, 2, 3]
+# 56  Winning team              33.3%_18 [6, 5, 3, 3, 1]
+# 112 Team 1                    20.0%_25 [5, 5, 5, 7, 3]
+# 72  Logic and Functions       17.6%_17 [3, 5, 4, 3, 2]
+# 79  Bleck                     14.8%_27 [4, 2, 4, 11, 6]
+# 289 squad buster              14.3%_21 [3, 5, 5, 6, 2]
+# 105 pikachu                   11.1%_18 [2, 6, 2, 6, 2]
+# 69  Galm Team                 8.7%_23 [2, 6, 3, 9, 3]
+# 113 BOB                       8.7%_23 [2, 5, 4, 4, 8]
+# 87  Burt Picklejuice          6.9%_29 [2, 6, 12, 4, 5]
+# 68  Butter Paneer             4.5%_22 [1, 4, 6, 4, 7]
+# 117 Rolla                     4.3%_23 [1, 3, 6, 5, 8]
+# 61  Existential Birds         4.3%_23 [1, 3, 8, 6, 5]
+
+
+# 80  ryno                      61.0%_105 [64, 22, 7, 8, 4]
+# 76  Gacha Funds               42.1%_19 [8, 1, 5, 3, 2]
+# 75  IELTS5.5                  41.2%_17 [7, 4, 3, 0, 3]
+# 89  Banana                    38.9%_18 [7, 2, 3, 0, 6]
+# 112 Team 1                    33.3%_15 [5, 2, 3, 3, 2]
+# 90  しかのこのこのここしたんたん            30.8%_13 [4, 4, 3, 1, 1]
+# 113 BOB                       16.7%_06 [1, 2, 1, 2, 0]
+# 87  Burt Picklejuice          12.5%_16 [2, 3, 4, 6, 1]
+# 56  Winning team              11.8%_17 [2, 5, 4, 3, 3]
+# 88  Alpha Team                6.7%_15 [1, 4, 4, 4, 2]
+# 79  Bleck                     5.6%_18 [1, 4, 5, 3, 5]
+# 60  What's a Pythong?         5.3%_19 [1, 4, 7, 4, 3]
+# 96  Apex                      5.0%_20 [1, 3, 6, 4, 6]
+# 63  MIB                       4.5%_22 [1, 5, 7, 6, 3]
 
 _print = print
 print = lambda *args, **kwargs: _print(*args, **kwargs, flush=True)

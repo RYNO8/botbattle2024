@@ -1,9 +1,25 @@
 # SPREE_THRESH, LEAVE_T, SCORE_D, SCORE_C = 6, 2, 1, 0
-SPREE_THRESH, LEAVE_T, SCORE_D, SCORE_C, CARD_THRESH = 6, 3, 1, 0, 9
+SPREE_THRESH, LEAVE_T, SCORE_D, SCORE_C, CARD_THRESH = 6, 2, 1, 0, 7
 # SPREE_THRESH, LEAVE_T, SCORE_D, SCORE_C = map(int, __file__.split("_")[-5:-1])
 UNCLAIMED_PRIORITY = [39]
 
 # for filename in w_{5,6,7,8}_{2,3,4}_{0,1}_{0,1}_.py; do cp w.py "${filename}"; done
+
+# 80  ryno                      51.2%_80 [41, 13, 10, 11, 5]
+# 75  IELTS5.5                  50.0%_08 [4, 3, 0, 1, 0]
+# 90  しかのこのこのここしたんたん            46.2%_13 [6, 1, 3, 2, 1]
+# 56  Winning team              36.4%_11 [4, 2, 2, 0, 3]
+# 112 Team 1                    35.0%_20 [7, 5, 0, 3, 5]
+# 76  Gacha Funds               30.0%_10 [3, 2, 3, 1, 1]
+# 113 BOB                       23.1%_13 [3, 4, 3, 2, 1]
+# 87  Burt Picklejuice          20.0%_15 [3, 3, 5, 2, 2]
+# 105 pikachu                   15.4%_13 [2, 2, 1, 5, 3]
+# 66  Team Name                 15.4%_13 [2, 3, 6, 2, 0]
+# 89  Banana                    14.3%_07 [1, 1, 0, 1, 4]
+# 72  Logic and Functions       11.1%_09 [1, 4, 2, 2, 0]
+# 117 Rolla                     11.1%_09 [1, 0, 0, 4, 4]
+# 96  Apex                      8.3%_12 [1, 4, 3, 1, 3]
+# 60  What's a Pythong?         6.7%_15 [1, 1, 8, 2, 3]
 
 _print = print
 print = lambda *args, **kwargs: _print(*args, **kwargs, flush=True)
@@ -126,7 +142,7 @@ class BotState():
         bestScore = (-1e9, -1e9, -1e9, -1e9)
 
         numOwnedBy = [len(game.state.get_territories_owned_by(p_id)) for p_id in game.state.players]
-
+    
         for _ in range(200):
             path = [random.choice(border_t)]
             seen = set(my_t)
